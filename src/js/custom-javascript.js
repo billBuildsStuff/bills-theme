@@ -32,14 +32,14 @@ $j('#menu-item-63').click(function() { // #menu-item-63 for local #menu-item-31 
     },10000);
   });
 
-  $j('#menu-item-85').click(function() { // #menu-item-63 for local #menu-item-31 for production
+  $j('#menu-item-93').click(function() { // #menu-item-93 for local #menu-item-85 for production
     $j('#web_primary').show(800);
     setTimeout(function(){
         $j('#web_primary').hide(800);
     },10000);
   });
 
-$j('#menu-item-52').click(function() { // #menu-item-52 for local #menu-item-30 for production
+$j('#menu-item-30').click(function() { // #menu-item-52 for local #menu-item-30 for production
     $j('#about_me').show();
     setTimeout(function(){
       $j('#about_me').hide(800);
