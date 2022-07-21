@@ -25,7 +25,7 @@ var $j = jQuery.noConflict();
     }
   });
 
-$j('#menu-item-63').click(function() { // #menu-item-63 for local #menu-item-31 for production
+$j('#menu-item-31').click(function() { // #menu-item-63 for local #menu-item-31 for production
     $j('#primary').show(800);
     setTimeout(function(){
         $j('#primary').hide(800);
