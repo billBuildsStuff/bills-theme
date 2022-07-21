@@ -15598,8 +15598,26 @@ figure.woocommerce-product-gallery__wrapper {
   display: block;
 }
 
+/***********************/
+/* START GLOBAL STYLE */
+#primary {
+  display: none;
+}
+
+#web_primary {
+  display: none;
+}
+
+#about_me {
+  display: none;
+}
+
+.not-yet {
+  display: none;
+}
+
 body {
-  background-color: #F8FAFC;
+  background-color: #f8fafc;
   font-family: "Manrope", sans-serif;
 }
 
@@ -15648,50 +15666,6 @@ p {
   padding-left: 20px;
 }
 
-.logo-tile {
-  background-color: #fff;
-  border-radius: 5px;
-  padding: 1.5em;
-  margin-bottom: 0.5em;
-  transition: all ease-in-out 0.2s;
-  border: 5px solid transparent;
-}
-
-.logo-tile p {
-  font-size: 12pt;
-  white-space: nowrap;
-  overflow: hidden;
-  -webkit-animation: typing 1.5s steps(22, end) forwards, blink 0.75s infinite;
-  animation: typing 1.5s steps(22, end) forwards, blink 0.75s infinite;
-}
-
-.logo-tile div.btn {
-  width: 100%;
-  transition: all ease-in-out 0.2s;
-}
-
-.logo-tile div.btn:hover {
-  background-color: #ffffff;
-  color: #2d2d2d;
-}
-
-.headshot {
-  background-color: #fff;
-  border-radius: 5px;
-  padding: 0.5em;
-  transition: all ease-in-out 0.2s;
-}
-
-.my-story {
-  padding-left: 3em;
-}
-
-.logo-tile:hover {
-  border-bottom: 5px solid #2d2d2d;
-  border-right: 5px solid #2d2d2d;
-  transition: all ease-in-out 0.2s;
-}
-
 div.spacer-sm {
   display: block;
   width: 100%;
@@ -15704,12 +15678,8 @@ div.spacer-lg {
   height: 3em;
 }
 
-.bg-primary {
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-}
-
-.nav-link::after, .bump-me-left::after {
+.nav-link::after,
+.bump-me-left::after {
   content: "";
   display: block;
   width: 0;
@@ -15719,7 +15689,8 @@ div.spacer-lg {
   margin-top: 1.5em;
 }
 
-.nav-link:hover::after, .bump-me-left:hover::after {
+.nav-link:hover::after,
+.bump-me-left:hover::after {
   width: 100%;
 }
 
@@ -15755,6 +15726,74 @@ div.spacer-lg {
   margin-bottom: 5px;
 }
 
+.no-animate p {
+  -webkit-animation: none !important;
+  animation: none !important;
+  overflow: visible !important;
+  white-space: inherit !important;
+}
+
+.foobox img:hover {
+  border-left: 1px solid #2d2d2d;
+  border-top: 1px solid #2d2d2d;
+}
+
+/* END GLOBAL STYLE */
+/***********************/
+/***********************/
+/* START HOME STYLE */
+.logo-tile {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 1.5em;
+  margin-bottom: 0.5em;
+  transition: all ease-in-out 0.2s;
+  border: 5px solid transparent;
+}
+
+.logo-tile p {
+  font-size: 12pt;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: typing 1.5s steps(22, end) forwards, blink 0.75s infinite;
+  animation: typing 1.5s steps(22, end) forwards, blink 0.75s infinite;
+}
+
+.logo-tile div.btn {
+  width: 100%;
+  transition: all ease-in-out 0.2s;
+}
+
+.logo-tile div.btn:hover {
+  background-color: #ffffff;
+  color: #2d2d2d;
+}
+
+.headshot {
+  transition: all ease-in-out 0.2s;
+}
+
+.headshot img {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0.5em;
+}
+
+.my-story {
+  padding-left: 3em;
+}
+
+.logo-tile:hover {
+  border-bottom: 5px solid #2d2d2d;
+  border-right: 5px solid #2d2d2d;
+  transition: all ease-in-out 0.2s;
+}
+
+.bg-primary {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
 #primary p {
   font-size: 18pt;
   margin: 0px;
@@ -15764,6 +15803,18 @@ div.spacer-lg {
   animation: typing 2.5s steps(22, end) forwards, blink 1s infinite;
 }
 
+#web_primary p {
+  font-size: 18pt;
+  margin: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: typing 2.5s steps(22, end) forwards, blink 1s infinite;
+  animation: typing 2.5s steps(22, end) forwards, blink 1s infinite;
+}
+
+/* END HOME STYLE*/
+/**********************/
+/* START HELPERS STYLE */
 @-webkit-keyframes typing {
   0% {
     width: 0%;
@@ -15772,7 +15823,6 @@ div.spacer-lg {
     width: 100%;
   }
 }
-
 @keyframes typing {
   0% {
     width: 0%;
@@ -15797,6 +15847,22 @@ div.spacer-lg {
     border-right: 2px solid #222;
   }
 }
+/* END HELPERS STYLE */
+/**********************/
+/**********************/
+/* START MOBILE STYLE */
+@media (max-width: 1399px) {
+  #primary p {
+    font-size: 14pt;
+  }
+
+  #web_primary p {
+    -webkit-animation: none;
+    animation: none;
+    overflow: visible;
+    white-space: inherit;
+  }
+}
 @media (max-width: 576px) {
   .bump-me-left {
     margin-top: 3em !important;
@@ -15819,6 +15885,32 @@ div.spacer-lg {
     padding: 10px 0 10px 0;
   }
 }
+@media (max-width: 768px) {
+  .headshot img {
+    display: block;
+    max-width: 350px;
+    height: auto;
+    background-color: none !important;
+    margin: 0 auto 1.5em auto;
+  }
+}
+@media (max-width: 992px) {
+  #primary p {
+    -webkit-animation: none;
+    animation: none;
+    overflow: visible;
+    white-space: inherit;
+  }
+
+  #web_primary p {
+    -webkit-animation: none;
+    animation: none;
+    overflow: visible;
+    white-space: inherit;
+  }
+}
+/* END MOBILE STYLE */
+/**********************/
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;
