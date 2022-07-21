@@ -15857,10 +15857,7 @@ div.spacer-lg {
   }
 
   #web_primary p {
-    -webkit-animation: none;
-    animation: none;
-    overflow: visible;
-    white-space: inherit;
+    font-size: 14pt;
   }
 }
 @media (max-width: 576px) {
