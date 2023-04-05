@@ -16276,7 +16276,7 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
 }
 
 .single #primary {
-  display: flex;
+  display: flex !important;
   flex-direction: row;
 }
 
