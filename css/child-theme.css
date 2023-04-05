@@ -16275,4 +16275,9 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   border: 1px solid #e9ecef;
 }
 
+.single #primary {
+  display: flex;
+  flex-direction: row;
+}
+
 /*# sourceMappingURL=child-theme.css.map */
